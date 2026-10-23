@@ -1,0 +1,39 @@
+name: "UI Report"
+description: "Report a visual or layout issue"
+title: "[UI Report] "
+labels: ["ui", "beta"]
+body:
+  - type: markdown
+    attributes:
+      value: "Please do not upload FM save files, personal finances, or private logs. Issues are public."
+  - type: textarea
+    id: description
+    attributes:
+      label: "Description / Beschreibung"
+      description: "Describe the issue or idea."
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: "Steps to reproduce / Schritte zum Nachstellen"
+      placeholder: "1. ...\n2. ...\n3. ..."
+    validations:
+      required: false
+  - type: input
+    id: version
+    attributes:
+      label: "MANAGER 360 version"
+      placeholder: "1.42.24"
+    validations:
+      required: true
+  - type: dropdown
+    id: os
+    attributes:
+      label: "Operating system"
+      options:
+        - "Windows 11"
+        - "Windows 10"
+        - "Other"
+    validations:
+      required: false
